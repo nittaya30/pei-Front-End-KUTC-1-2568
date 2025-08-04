@@ -113,4 +113,51 @@
 //     document.write(" อยากกลับบ้าน ");
 //     document.write( i );
 // }
+ 
+//ฟังก์ชันแบบไม่มีการรับค่า
+// function showmessage(){
+//     alert("ยินดีต้อนรับ")
+// }
+// showmessage();//การเรียกใช้งานฟังก์ชัน
 
+//ฟังก์ชันแบบมีการรับค่า
+// function cal(number){
+//     return document.write(number * 2);
+// }
+// cal(20);//เรียกใช้งานฟังก์ชัน
+
+// function showname(realname,surname){
+//     return document.write(realname + " " + surname)
+// }
+// showname("นิตยา","ศาลาแดง");
+
+let name = document.getElementById("Test-1");
+name.style.color = "red";
+
+function changecolor(){
+ let name = document.getElementById("Test-1");
+name.style.color = "red";  
+name.style.backgroundColor = "yellow";
+}
+
+function test(){
+    let result = document.querySelector(".Test-2");
+    result.setAttribute("class","light");
+}
+
+let mode = document.querySelector(".mode");
+function drakmode(){
+    mode.setAttribute("class","drak");
+}
+
+function lightmode(){
+    mode.setAttribute("class","light");
+}
+
+
+function changetext(){
+    let text = document.getElementById("change-text").value;
+    let result = document.getElementById("showtext");
+
+    result.innerHTML = text;
+}
